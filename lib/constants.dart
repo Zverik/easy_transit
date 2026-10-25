@@ -1,0 +1,1 @@
+const kAppTitle = 'Easy Transit';

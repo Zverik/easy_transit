@@ -1,0 +1,56 @@
+{
+  "loading": "Loading...",
+  "@loading": {
+    "description": "First message people see, when the app is opening feed files from memory."
+  },
+  "acquiringLocation": "Finding you...",
+  "@acquiringLocation": {
+    "description": "On the loading screen, a message when acquiring geolocation."
+  },
+  "myLocation": "My Location",
+  "@myLocation": {
+    "description": "Accessibility label for my location button on the main screen."
+  },
+  "enableGPS" : "Enable GPS",
+  "@enableGPS": {
+    "description": "Title of the alert for enabling location services."
+  },
+  "enableGPSMessage": "Please turn on the location services in the settings panel that will be shown.",
+  "@enableGPSMessage": {
+    "description": "Contents of the alert for enabling location services."
+  },
+  "enableLocation": "Enable Location",
+  "@enableLocation":  {
+    "description": "Title of the alert for allowing app access to location."
+  },
+  "enableLocationMessage": "Please allow location access for the app in the settings panel that will be shown.",
+  "@enableLocationMessage": {
+    "description": "Contents of the alert for allowing app access to location."
+  },
+  "next": "next {time}",
+  "@next": {
+    "description": "For the timetable, prefix for next arrival ('next 12:30'). Keep it short.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "6 min"
+      }
+    }
+  },
+  "search": "Search...",
+  "@search": {
+    "description": "Placeholder for the search text field."
+  },
+  "chooseOnMap": "Choose on a map...",
+  "@chooseOnMap": {
+    "description": "Item in the search panel to direct to the map for choosing a destination."
+  },
+  "showMap": "Map",
+  "@showMap": {
+    "description": "Accessibility label for a map icon next to a search result."
+  },
+  "whereTo": "Where to?",
+  "@whereTo": {
+    "description": "Title for the page where you choose a destination on a map."
+  }
+}

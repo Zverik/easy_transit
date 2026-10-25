@@ -1,0 +1,38 @@
+name: easy_transit
+description: "Public transit application directed at quickly learning where you are and what to do."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  adaptive_dialog: ^2.4.2
+  flutter_map: ^8.2.0
+  flutter_riverpod: ^3.3.1
+  geolocator: ^14.0.3
+  latlong2: ^0.9.0
+  logging: ^1.0.2
+  shared_preferences: ^2.5.5
+  sqflite: ^2.4.2
+  vector_map_tiles: ^9.0.0-beta.8
+  vector_tile_renderer: ^6.1.0
+  osm_nominatim: ^4.0.1
+  gtfs_binary_dart: ^0.1.0
+  gtfs_binary_flutter:
+    path: ../gtfs_binary_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
