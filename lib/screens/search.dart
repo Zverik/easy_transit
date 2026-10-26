@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:easy_transit/helpers/equirectangular.dart';
 import 'package:easy_transit/l10n/l10n.dart';
+import 'package:easy_transit/providers/bookmarks.dart';
 import 'package:easy_transit/providers/geolocation.dart';
 import 'package:easy_transit/providers/last_dest.dart';
 import 'package:easy_transit/providers/transit.dart';
@@ -58,6 +59,7 @@ class _SearchPageState extends ConsumerState<SearchPage> {
       for (var dest in lastDest) {
         results.add(SearchResult(icon: Icons.location_history_rounded, title: dest.name, location: dest.destination));
       }
+      setState(() {});
     } else {
       if (query.length < 2) {
         lastQuerySearchedForStops = query;
@@ -141,6 +143,7 @@ class _SearchPageState extends ConsumerState<SearchPage> {
   @override
   Widget build(BuildContext context) {
     ref.listen(lastDestinationsProvider, (_, _) => updateResults(''));
+    ref.listen(bookmarkProvider, (_, _) => updateResults(''));
     return Scaffold(
       appBar: AppBar(
         title: Container(
