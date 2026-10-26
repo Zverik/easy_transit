@@ -20,7 +20,7 @@ class ItineraryCard extends StatelessWidget {
     try {
       ItineraryLeg firstTransit = itinerary.firstWhere((element) => element.mode != TransitMode.walk);
       firstStop = AppLocalizations.of(context)!.busLeavesFrom(
-        '${firstTransit.mode.name} ${firstTransit.routeShortName}',
+        '${firstTransit.mode.name} ${firstTransit.route?.shortName}',
         firstTransit.departure,
         firstTransit.from.name ?? '?',
       );

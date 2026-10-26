@@ -20,15 +20,15 @@ class LegIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (leg.routeId != null) {
+    if (leg.route != null) {
       return RoutePlace(
-        color: leg.routeColor == null
+        color: leg.route?.color == null
             ? Colors.blueAccent
-            : Color(int.parse(leg.routeColor!, radix: 16)).withValues(alpha: 1.0),
-        number: leg.routeShortName ?? '00',
+            : Color(int.parse(leg.route!.color!, radix: 16)).withValues(alpha: 1.0),
+        number: leg.route?.shortName ?? '00',
         icon: _findIcon(leg.mode),
         isBold: true,
-        semantics: '${leg.mode.name} ${leg.routeShortName}',
+        semantics: '${leg.mode.name} ${leg.route?.shortName}',
       );
     }
 
