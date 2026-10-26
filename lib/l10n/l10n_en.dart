@@ -47,4 +47,124 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get whereTo => 'Where to?';
+
+  @override
+  String get addBookmark => 'Add Bookmark';
+
+  @override
+  String get bookmarkName => 'Bookmark name';
+
+  @override
+  String get chooseEmoji => 'Choose an emoji';
+
+  @override
+  String deleteBookmark(String name) {
+    return 'Delete bookmark \"$name\"?';
+  }
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get lookingForRoute => 'Looking for a route...';
+
+  @override
+  String get noRoutes => 'No routes found, sorry.';
+
+  @override
+  String minutes(Object value) {
+    return '$value min';
+  }
+
+  @override
+  String busLeavesFrom(String bus, DateTime time, String stop) {
+    final intl.DateFormat timeDateFormat = intl.DateFormat.Hm(localeName);
+    final String timeString = timeDateFormat.format(time);
+
+    return '$bus leaves at $timeString from $stop';
+  }
+
+  @override
+  String fullMinutes(num value) {
+    String _temp0 = intl.Intl.pluralLogic(
+      value,
+      locale: localeName,
+      other: '$value minutes',
+      few: '$value minutes',
+      one: '$value minute',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String walkMin(Object min) {
+    return 'Walk $min';
+  }
+
+  @override
+  String arrivesText(Object bus, Object headsign, Object when) {
+    return '$bus to $headsign arrives $when';
+  }
+
+  @override
+  String get storePlan => 'Save route plan';
+
+  @override
+  String get restorePlan => 'Stored route plan';
+
+  @override
+  String walkMeters(Object distance, String destination) {
+    return 'Walk $distance m to <b>$destination</b> (the yellow circle).';
+  }
+
+  @override
+  String youGotTime(String minutes) {
+    return 'You\'ve got $minutes.';
+  }
+
+  @override
+  String noHurry(String minutes) {
+    return 'Don\'t hurry, you\'ve got $minutes.';
+  }
+
+  @override
+  String get walkDestination => 'destination';
+
+  @override
+  String stops(num stops) {
+    String _temp0 = intl.Intl.pluralLogic(
+      stops,
+      locale: localeName,
+      other: '$stops stops',
+      few: '$stops stops',
+      one: '$stops stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String waitAndRideStops(String min, String stops, String destination) {
+    return 'Wait for $min and ride $stops to <b>$destination</b>.';
+  }
+
+  @override
+  String rideStops(String stops, String destination) {
+    return 'Ride $stops to <b>$destination</b>.';
+  }
+
+  @override
+  String waitAndRideTime(String min, DateTime arrival, String destination) {
+    final intl.DateFormat arrivalDateFormat = intl.DateFormat.Hm(localeName);
+    final String arrivalString = arrivalDateFormat.format(arrival);
+
+    return 'Wait $min and ride until $arrivalString to <b>$destination</b>.';
+  }
+
+  @override
+  String rideTime(DateTime arrival, String destination) {
+    final intl.DateFormat arrivalDateFormat = intl.DateFormat.Hm(localeName);
+    final String arrivalString = arrivalDateFormat.format(arrival);
+
+    return 'Ride until $arrivalString to <b>$destination</b>.';
+  }
 }

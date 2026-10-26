@@ -52,5 +52,216 @@
   "whereTo": "Where to?",
   "@whereTo": {
     "description": "Title for the page where you choose a destination on a map."
+  },
+  "addBookmark": "Add Bookmark",
+  "@addBookmark": {
+    "description": "Bookmark screen title."
+  },
+  "bookmarkName": "Bookmark name",
+  "@bookmarkName": {
+    "description": "Hint on the bookmark adding screen."
+  },
+  "chooseEmoji": "Choose an emoji",
+  "@chooseEmoji": {
+    "description": "Hint for the emoji picked on the bookmark adding screen."
+  },
+  "deleteBookmark": "Delete bookmark \"{name}\"?",
+  "@deleteBookmark": {
+    "description": "Text on a panel for deleting a bookmark.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Home"
+      }
+    }
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Button text for bookmark deletion."
+  },
+  "lookingForRoute": "Looking for a route...",
+  "@lookingForRoute": {
+    "description": "Text displayed when the app is looking for routes to a destination."
+  },
+  "noRoutes": "No routes found, sorry.",
+  "@noRoutes": {
+    "description": "When no routes to a destination found."
+  },
+  "minutes": "{value} min",
+  "@minutes": {
+    "description": "Shorthand for minutes, used like '3 min'.",
+    "placeholders": {
+      "value": {
+        "example": "3"
+      }
+    }
+  },
+  "busLeavesFrom": "{bus} leaves at {time} from {stop}",
+  "@busLeavesFrom": {
+    "description": "Subtitle for a planned route. Used like 'Tram 2 leaves at 11:34 from Balti jaam'.",
+    "placeholders": {
+      "bus": {
+        "type": "String",
+        "example": "Bus 10"
+      },
+      "time": {
+        "type": "DateTime",
+        "format": "Hm",
+        "example": "12:34"
+      },
+      "stop": {
+        "type": "String",
+        "example": "Balti jaam"
+      }
+    }
+  },
+  "fullMinutes": "{value,plural, =1{{value} minute} few{{value} minutes} other{{value} minutes}}",
+  "@fullMinutes": {
+    "description": "Duration in minutes.",
+    "placeholders": {
+      "value": {}
+    }
+  },
+  "walkMin": "Walk {min}",
+  "@walkMin": {
+    "description": "Accessibility text for walking N minutes.",
+    "placeholders": {
+      "min": {
+        "example": "4 min"
+      }
+    }
+  },
+  "arrivesText": "{bus} to {headsign} arrives {when}",
+  "@arrivesText": {
+    "description": "Accessibility text for an arrival row.",
+    "placeholders": {
+      "bus": {
+        "example": "Tram 3"
+      },
+      "headsign": {
+        "example": "Balti jaam"
+      },
+      "when": {
+        "example": "3 min"
+      }
+    }
+  },
+  "storePlan": "Save route plan",
+  "@storePlan": {
+    "description": "Accessibility text for the route plan bookmark button."
+  },
+  "restorePlan": "Stored route plan",
+  "@restorePlan": {
+    "description": "Accessibility text for the route plan button on the main screen."
+  },
+  "walkMeters": "Walk {distance} m to <b>{destination}</b> (the yellow circle).",
+  "@walkMeters": {
+    "description": "Itinerary text for walking.",
+    "placeholders": {
+      "distance": {
+        "example": "200"
+      },
+      "destination": {
+        "type": "String",
+        "example": "Balti jaam"
+      }
+    }
+  },
+  "youGotTime": "You've got {minutes}.",
+  "@youGotTime": {
+    "description": "Comment about walking time.",
+    "placeholders": {
+      "minutes": {
+        "type": "String",
+        "example": "3 minutes"
+      }
+    }
+  },
+  "noHurry": "Don't hurry, you've got {minutes}.",
+  "@noHurry": {
+    "description": "Comment about walking time when the speed is very low.",
+    "placeholders": {
+      "minutes": {
+        "type": "String",
+        "example": "3 minutes"
+      }
+    }
+  },
+  "walkDestination": "destination",
+  "@walkDestination": {
+    "description": "Generic name of a destination waypoint."
+  },
+  "stops": "{stops,plural, =1{{stops} stop} few{{stops} stops} other{{stops} stops}}",
+  "@stops": {
+    "description": "Number of stops for an itinerary text.",
+    "placeholders": {
+      "stops": {}
+    }
+  },
+  "waitAndRideStops": "Wait for {min} and ride {stops} to <b>{destination}</b>.",
+  "@waitAndRideStops": {
+    "description": "Itinerary text for riding a few stops after waiting.",
+    "placeholders": {
+      "min": {
+        "type": "String",
+        "example": "3 min"
+      },
+      "stops": {
+        "type": "String",
+        "example": "2 stops"
+      },
+      "destination": {
+        "type": "String",
+        "example": "Meistri"
+      }
+    }
+  },
+  "rideStops": "Ride {stops} to <b>{destination}</b>.",
+  "@rideStops": {
+    "description": "Itinerary text for riding a few stops.",
+    "placeholders": {
+      "stops": {
+        "type": "String",
+        "example": "2 stops"
+      },
+      "destination": {
+        "type": "String",
+        "example": "Meistri"
+      }
+    }
+  },
+  "waitAndRideTime": "Wait {min} and ride until {arrival} to <b>{destination}</b>.",
+  "@waitAndRideTime": {
+    "description": "Itinerary text for riding until a specified time after waiting.",
+    "placeholders": {
+      "min": {
+        "type": "String",
+        "example": "3 min"
+      },
+      "arrival": {
+        "type": "DateTime",
+        "format": "Hm",
+        "example": "18:44"
+      },
+      "destination": {
+        "type": "String",
+        "example": "Meistri"
+      }
+    }
+  },
+  "rideTime": "Ride until {arrival} to <b>{destination}</b>.",
+  "@rideTime": {
+    "description": "Itinerary text for riding until a specified time.",
+    "placeholders": {
+      "arrival": {
+        "type": "DateTime",
+        "format": "Hm",
+        "example": "18:44"
+      },
+      "destination": {
+        "type": "String",
+        "example": "Meistri"
+      }
+    }
   }
 }

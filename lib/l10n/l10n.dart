@@ -165,6 +165,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Where to?'**
   String get whereTo;
+
+  /// Bookmark screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Bookmark'**
+  String get addBookmark;
+
+  /// Hint on the bookmark adding screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmark name'**
+  String get bookmarkName;
+
+  /// Hint for the emoji picked on the bookmark adding screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an emoji'**
+  String get chooseEmoji;
+
+  /// Text on a panel for deleting a bookmark.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete bookmark \"{name}\"?'**
+  String deleteBookmark(String name);
+
+  /// Button text for bookmark deletion.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// Text displayed when the app is looking for routes to a destination.
+  ///
+  /// In en, this message translates to:
+  /// **'Looking for a route...'**
+  String get lookingForRoute;
+
+  /// When no routes to a destination found.
+  ///
+  /// In en, this message translates to:
+  /// **'No routes found, sorry.'**
+  String get noRoutes;
+
+  /// Shorthand for minutes, used like '3 min'.
+  ///
+  /// In en, this message translates to:
+  /// **'{value} min'**
+  String minutes(Object value);
+
+  /// Subtitle for a planned route. Used like 'Tram 2 leaves at 11:34 from Balti jaam'.
+  ///
+  /// In en, this message translates to:
+  /// **'{bus} leaves at {time} from {stop}'**
+  String busLeavesFrom(String bus, DateTime time, String stop);
+
+  /// Duration in minutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{value,plural, =1{{value} minute} few{{value} minutes} other{{value} minutes}}'**
+  String fullMinutes(num value);
+
+  /// Accessibility text for walking N minutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk {min}'**
+  String walkMin(Object min);
+
+  /// Accessibility text for an arrival row.
+  ///
+  /// In en, this message translates to:
+  /// **'{bus} to {headsign} arrives {when}'**
+  String arrivesText(Object bus, Object headsign, Object when);
+
+  /// Accessibility text for the route plan bookmark button.
+  ///
+  /// In en, this message translates to:
+  /// **'Save route plan'**
+  String get storePlan;
+
+  /// Accessibility text for the route plan button on the main screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Stored route plan'**
+  String get restorePlan;
+
+  /// Itinerary text for walking.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk {distance} m to <b>{destination}</b> (the yellow circle).'**
+  String walkMeters(Object distance, String destination);
+
+  /// Comment about walking time.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve got {minutes}.'**
+  String youGotTime(String minutes);
+
+  /// Comment about walking time when the speed is very low.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t hurry, you\'ve got {minutes}.'**
+  String noHurry(String minutes);
+
+  /// Generic name of a destination waypoint.
+  ///
+  /// In en, this message translates to:
+  /// **'destination'**
+  String get walkDestination;
+
+  /// Number of stops for an itinerary text.
+  ///
+  /// In en, this message translates to:
+  /// **'{stops,plural, =1{{stops} stop} few{{stops} stops} other{{stops} stops}}'**
+  String stops(num stops);
+
+  /// Itinerary text for riding a few stops after waiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait for {min} and ride {stops} to <b>{destination}</b>.'**
+  String waitAndRideStops(String min, String stops, String destination);
+
+  /// Itinerary text for riding a few stops.
+  ///
+  /// In en, this message translates to:
+  /// **'Ride {stops} to <b>{destination}</b>.'**
+  String rideStops(String stops, String destination);
+
+  /// Itinerary text for riding until a specified time after waiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait {min} and ride until {arrival} to <b>{destination}</b>.'**
+  String waitAndRideTime(String min, DateTime arrival, String destination);
+
+  /// Itinerary text for riding until a specified time.
+  ///
+  /// In en, this message translates to:
+  /// **'Ride until {arrival} to <b>{destination}</b>.'**
+  String rideTime(DateTime arrival, String destination);
 }
 
 class _AppLocalizationsDelegate

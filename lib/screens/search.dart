@@ -140,6 +140,7 @@ class _SearchPageState extends ConsumerState<SearchPage> {
 
   @override
   Widget build(BuildContext context) {
+    ref.listen(lastDestinationsProvider, (_, _) => updateResults(''));
     return Scaffold(
       appBar: AppBar(
         title: Container(

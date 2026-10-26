@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:easy_transit/constants.dart';
+import 'package:easy_transit/l10n/l10n.dart';
+import 'package:easy_transit/providers/language.dart';
 import 'package:easy_transit/screens/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -36,6 +38,10 @@ class EasyTransitApp extends ConsumerWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.blue),
       ),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      // Adding "en" to the front so it's used by default.
+      supportedLocales: [Locale('en')] + AppLocalizations.supportedLocales,
+      locale: ref.watch(languageProvider),
       home: const LoadingPage(),
     );
   }

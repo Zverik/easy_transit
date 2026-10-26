@@ -153,6 +153,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+  emoji_picker_flutter:
+    dependency: "direct main"
+    description:
+      name: emoji_picker_flutter
+      sha256: "50f4da413a3dc5d2f59f2b0835ab3b3cce76c0779eb275058213506e6709503b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.5.4"
   equatable:
     dependency: transitive
     description:
@@ -325,6 +333,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.5"
+  google_polyline_algorithm:
+    dependency: transitive
+    description:
+      name: google_polyline_algorithm
+      sha256: "357874f00d3f93c3ba1bf4b4d9a154aa9ee87147c068238c1e8392012b686a03"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   gradient_borders:
     dependency: transitive
     description:
@@ -708,6 +724,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.1"
+  public_transport:
+    dependency: "direct main"
+    description:
+      path: "../public_transport_dart"
+      relative: true
+    source: path
+    version: "0.1.0"
   record_use:
     dependency: transitive
     description:
